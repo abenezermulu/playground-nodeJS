@@ -1,0 +1,11 @@
+At runtime, node converts every module and wrap them inside a wrapper function which looks like this... 
+This wrapper function is an Immediately Invoked Function. 
+
+(function(exports, require, module, __filename, __dirname){
+    function log(message) {
+        console.log(message); 
+    }
+
+    // Thats why we have access to those arguments
+    module.exports = log; 
+})
