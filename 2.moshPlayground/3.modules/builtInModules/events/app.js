@@ -12,4 +12,3 @@ emitter.on('messageLogged', (args) => {
 // listens to this event, and execute its function. 
 // We can also pass data to the listener. 
 emitter.emit('messageLogged', {id: 1, url: 'http://...'}); 
-
